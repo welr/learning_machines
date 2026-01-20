@@ -1,6 +1,6 @@
 # Learning Machines: Companion Notebooks
 
-Jupyter notebooks accompanying the textbook *Learning Machines: A Statistical Introduction* for the Master of Applied Data Science at Frankfurt School.
+Jupyter notebooks accompanying the textbook *Learning Machines: A Statistical Introduction*, by Gregory Wheeler
 
 ## Notebooks by Chapter
 
