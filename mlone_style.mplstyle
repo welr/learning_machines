@@ -1,0 +1,116 @@
+# MLone Unified Theme for Matplotlib
+# Economist-style formatting with unified color palette for book and notebooks
+# Usage: plt.style.use('mlone_style.mplstyle')
+#
+# Color Families:
+#   Blue (Book):    FS_BLUE #31417A, BLUE #076FA1, CYAN #2FC1D3
+#   Green (Notebook): FOREST #2D5A00, GREEN #4F9E00, SEAFOAM #3EB489
+#   Shared:         RED #E3120B, ORANGE #9E4F00, GRAY #666666
+
+# =============================================================================
+# FIGURE
+# =============================================================================
+figure.facecolor: white
+figure.edgecolor: white
+figure.figsize: 6.5, 4.5
+figure.dpi: 100
+savefig.dpi: 300
+savefig.bbox: tight
+savefig.pad_inches: 0.1
+savefig.transparent: False
+
+# =============================================================================
+# AXES
+# =============================================================================
+axes.facecolor: white
+axes.edgecolor: black
+axes.linewidth: 1.0
+axes.grid: True
+axes.grid.axis: y
+axes.axisbelow: True
+axes.titlesize: 18
+axes.titleweight: bold
+axes.titlepad: 12
+axes.labelsize: 14
+axes.labelweight: normal
+axes.labelpad: 8
+
+# Spines - only bottom visible
+axes.spines.top: False
+axes.spines.right: False
+axes.spines.left: False
+axes.spines.bottom: True
+
+# Color cycle: Blue family first (book mode), then green family, then accents
+# Use mt.set_notebook_mode() to switch to green-first for notebooks
+axes.prop_cycle: cycler('color', ['076FA1', '2FC1D3', '4F9E00', '3EB489', 'E3120B', '9E4F00', '666666'])
+
+# =============================================================================
+# GRID
+# =============================================================================
+grid.color: A8BAC4
+grid.linestyle: -
+grid.linewidth: 0.5
+grid.alpha: 1.0
+
+# =============================================================================
+# TICKS
+# =============================================================================
+xtick.direction: out
+xtick.major.size: 4
+xtick.major.width: 1.0
+xtick.minor.visible: False
+xtick.labelsize: 12
+xtick.color: black
+
+ytick.direction: out
+ytick.major.size: 0
+ytick.major.width: 0
+ytick.minor.visible: False
+ytick.labelsize: 12
+ytick.color: 666666
+ytick.left: False
+ytick.right: True
+ytick.labelleft: False
+ytick.labelright: True
+
+# =============================================================================
+# LINES
+# =============================================================================
+lines.linewidth: 2.0
+lines.markersize: 8
+lines.markeredgewidth: 1.0
+lines.markeredgecolor: white
+
+# =============================================================================
+# SCATTER
+# =============================================================================
+scatter.edgecolors: white
+
+# =============================================================================
+# LEGEND
+# =============================================================================
+legend.frameon: False
+legend.fontsize: 11
+legend.loc: best
+
+# =============================================================================
+# FONTS
+# =============================================================================
+# Roboto is preferred, but fall back to sans-serif if not available
+font.family: sans-serif
+font.sans-serif: Roboto, DejaVu Sans, Helvetica, Arial, sans-serif
+font.size: 12
+text.color: 333333
+
+# =============================================================================
+# PATCHES (for bar charts, etc.)
+# =============================================================================
+patch.linewidth: 0.5
+patch.edgecolor: white
+patch.facecolor: 076FA1
+
+# =============================================================================
+# HISTOGRAM
+# =============================================================================
+hist.bins: 20

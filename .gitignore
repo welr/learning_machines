@@ -1,0 +1,6 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+data/MNIST/
+.DS_Store
+.jupyter/
