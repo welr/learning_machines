@@ -33,6 +33,7 @@ Core dependencies:
 - **matplotlib** - Visualization
 - **scikit-learn** - Machine learning (Chapters 2-8)
 - **torch** - Deep learning (Chapters 9-11)
+- **torchvision** - Image datasets and transforms (Chapter 10)
 
 Optional dependencies:
 - **pymc** - Bayesian inference (ch02_03 only)
