@@ -60,6 +60,10 @@ jupyter notebook
 - Notebooks are designed to be run sequentially within each chapter
 - All figures use the `mlone_theme.py` styling module for visual consistency
 
+## Contributing
+
+Found an error? See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on submitting fixes.
+
 ## Related Resources
 
 - Textbook: *Learning Machines: A Statistical Introduction*
