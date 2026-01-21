@@ -31,6 +31,7 @@ Core dependencies:
 - **numpy** - Numerical computing
 - **pandas** - Data manipulation
 - **matplotlib** - Visualization
+- **scipy** - Statistical functions (Chapter 2)
 - **scikit-learn** - Machine learning (Chapters 2-8)
 - **torch** - Deep learning (Chapters 9-11)
 - **torchvision** - Image datasets and transforms (Chapter 10)
