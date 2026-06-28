@@ -1,5 +1,5 @@
 # MLone Unified Theme for Matplotlib
-# Economist-style formatting with unified color palette for book and notebooks
+# editorial-style formatting with unified color palette for book and notebooks
 # Usage: plt.style.use('mlone_style.mplstyle')
 #
 # Color Families:

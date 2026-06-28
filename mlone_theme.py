@@ -3,7 +3,7 @@ MLone Theme - Unified plotting utilities for Machine Learning textbook and noteb
 
 This module provides:
 - Unified color palette with Blue Family (book) and Green Family (notebooks)
-- Helper functions for applying the Economist style
+- Helper functions for applying the editorial style
 - Utilities for direct line labels, right-side y-axis, etc.
 - Mode switching between book and notebook color cycles
 
@@ -21,7 +21,7 @@ Usage:
 
     fig, ax = plt.subplots()
     ax.plot(x, y, color=mt.BLUE)
-    mt.apply_economist_style(ax)
+    mt.apply_book_style(ax)
     mt.save_figure(fig, 'my_figure')
 """
 
@@ -73,7 +73,7 @@ GRAY_DARKER = GRAY
 # COLOR CYCLES
 # =============================================================================
 
-# Book mode: blue family first (Economist style)
+# Book mode: blue family first (editorial style)
 BOOK_COLORS = [BLUE, CYAN, GREEN, SEAFOAM, RED, ORANGE, GRAY]
 BOOK_COLORS_2 = [BLUE, CYAN]
 BOOK_COLORS_3 = [BLUE, CYAN, RED]
@@ -114,7 +114,7 @@ def set_book_mode():
     """
     Switch to book color cycle (blue family first).
 
-    This is the default mode, matching the Economist-style figures in the textbook.
+    This is the default mode, matching the editorial-style figures in the textbook.
     Use this when generating figures for the PDF.
 
     Example:
@@ -132,9 +132,9 @@ def set_book_mode():
 # STYLE APPLICATION
 # =============================================================================
 
-def apply_economist_style(ax, title=None, subtitle=None, y_label_right=True):
+def apply_book_style(ax, title=None, subtitle=None, y_label_right=True):
     """
-    Apply Economist-style formatting to an axes object.
+    Apply editorial-style formatting to an axes object.
 
     This function applies additional styling beyond what the .mplstyle file provides,
     particularly for elements that need to be set after plotting.
@@ -163,7 +163,7 @@ def apply_economist_style(ax, title=None, subtitle=None, y_label_right=True):
     ax.xaxis.grid(False)
     ax.set_axisbelow(True)
 
-    # Y-axis on right side (Economist style)
+    # Y-axis on right side (editorial style)
     if y_label_right:
         ax.yaxis.tick_right()
         ax.yaxis.set_label_position('right')
@@ -221,7 +221,7 @@ def setup_figure(figsize=(6.5, 4.5), style_path=None):
 def add_direct_label(ax, x, y, text, color, fontsize=12, ha='left', va='center',
                      offset=(5, 0), background=True):
     """
-    Add a direct label to a line or point (Economist style - no legends).
+    Add a direct label to a line or point (editorial style - no legends).
 
     Parameters
     ----------
@@ -331,7 +331,7 @@ def save_figure(fig, name, output_dir=None, formats=('pdf',), dpi=300):
 def scatter_with_border(ax, x, y, color=BLUE, size=60, border_color='white',
                         border_width=1.5, **kwargs):
     """
-    Create a scatter plot with white-bordered points (Economist style).
+    Create a scatter plot with white-bordered points (editorial style).
 
     Parameters
     ----------
@@ -362,7 +362,7 @@ def scatter_with_border(ax, x, y, color=BLUE, size=60, border_color='white',
 def line_with_points(ax, x, y, color=BLUE, linewidth=2, point_size=60,
                      label=None, **kwargs):
     """
-    Create a line plot with scatter points overlaid (Economist style).
+    Create a line plot with scatter points overlaid (editorial style).
 
     Parameters
     ----------
@@ -519,7 +519,7 @@ def set_axis_format(ax, x_format=None, y_format=None):
 
 def set_clean_ticks(ax, x_ticks=None, y_ticks=None, x_labels=None, y_labels=None):
     """
-    Set clean, minimal tick marks (Economist style).
+    Set clean, minimal tick marks (editorial style).
 
     Parameters
     ----------
