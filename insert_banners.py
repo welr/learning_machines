@@ -11,6 +11,7 @@ import create_banner
 NOTEBOOKS = {
     "ch02_01_polynomial_regression.ipynb": "Polynomial Regression",
     "ch02_02_linear_regression_ols.ipynb": "Linear Regression: OLS",
+    "ch02_04_applied.ipynb": "Applied: Regression on Real Data",
     "ch03_01_gradient_descent.ipynb": "Gradient Descent",
     "ch04_01_logistic_regression.ipynb": "Logistic Regression",
     "ch04_02_multiclass.ipynb": "Multi-Class Classification",
@@ -18,9 +19,19 @@ NOTEBOOKS = {
     "ch06_01_model_evaluation.ipynb": "Model Evaluation",
     "ch07_01_regularization.ipynb": "Regularization",
     "ch08_01_trees_ensembles.ipynb": "Trees and Ensembles",
+    "ch08_03_applied.ipynb": "Applied: Trees and Boundaries",
     "ch09_01_backpropagation.ipynb": "Backpropagation",
     "ch10_01_convnets.ipynb": "Convolutional Networks",
     "ch11_01_attention_transformers.ipynb": "Attention and Transformers",
+    "ch04_03_applied.ipynb": "Applied: Logistic Regression and LDA",
+    "ch06_02_applied.ipynb": "Applied: Evaluating a Classifier",
+    "ch07_02_applied.ipynb": "Applied: Ridge and LASSO",
+    "ch09_02_applied.ipynb": "Applied: A Neural Net in PyTorch",
+    "ch10_02_applied.ipynb": "Applied: Convolutional Networks",
+    "ch11_02_applied.ipynb": "Applied: Attention from Scratch",
+    "ch12_01_build_a_gpt.ipynb": "Capstone: Build a GPT",
+    "ch02_03_bayesian_regression.ipynb": "Bayesian Linear Regression",
+    "ch08_02_kernel_methods.ipynb": "Kernel Methods",
 }
 
 def insert_banner(notebook_path, subtitle):

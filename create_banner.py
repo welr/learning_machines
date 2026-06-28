@@ -1,7 +1,8 @@
 """
 Banner generator for Learning Machines notebooks.
-Style: "Final Hierarchical" - Minimalist, white background, with strong
-typographic hierarchy to dominate notebook section headers.
+Matches the companion site's identity: Frankfurt-School blue wordmark, a red
+circle mark (echoing the site navbar), Georgia serif (the site's Fraunces
+fallback), and a sparing red accent. White background, strong hierarchy.
 """
 
 import matplotlib.pyplot as plt
@@ -10,78 +11,65 @@ import base64
 from io import BytesIO
 
 # =============================================================================
-# Brand colors (from mlone_theme.py notebook family)
+# Brand colors (aligned to the companion site / theme.scss)
 # =============================================================================
-FOREST = '#2D5A00'      # Dark anchor for main title
-GREEN = '#4F9E00'       # Primary topic accent
-SEAFOAM = '#3EB489'     # Light accent for separator line
-GRAY = '#666666'        # Secondary text (metadata, subtitles)
-WHITE = '#FFFFFF'       # Background
+FS_BLUE = '#31417A'     # Frankfurt School blue — wordmark + topic
+RED     = '#E3120B'     # sharp accent — the brand circle (matches the navbar mark)
+GRAY    = '#666666'     # secondary text (subtitle, metadata)
+RULE    = '#D9D9D9'     # subtle separator
+WHITE   = '#FFFFFF'     # background
+
+FONT = 'Georgia'        # the site's serif fallback for the Fraunces wordmark
+
 
 def create_banner(
     subtitle="Polynomial Regression",
     author="Gregory Wheeler",
-    github_url="github.com/gw/learning-machines",
-    figsize=(10, 2.0), # Increased height to accommodate larger title
-    dpi=150
+    github_url="github.com/welr/learning_machines",
+    figsize=(10, 2.0),
+    dpi=150,
 ):
-    """
-    Create a minimalist typographic notebook header banner with strong hierarchy.
-    """
-    # Setup figure with white background
+    """Create the notebook header banner, matched to the companion-site identity."""
     fig, ax = plt.subplots(figsize=figsize, dpi=dpi)
     fig.patch.set_facecolor(WHITE)
     ax.set_facecolor(WHITE)
-
-    # Set figure bounds
     ax.set_xlim(0, 10)
-    ax.set_ylim(0, 2.0) # Adjusted Y-limit for new height
+    ax.set_ylim(0, 2.0)
     ax.axis('off')
 
-    # =========================================================================
-    # Typography & Layout
-    # =========================================================================
-    text_x = 0.4
-    font_family = 'sans-serif'
+    left = 1.05  # left edge of the wordmark and everything beneath it
 
-    # 1. Main Title Block (Top Left)
-    # -----------------------------------------------------------
-    # Main Title: INCREASED from 24 to 32 for primary hierarchy
-    ax.text(text_x, 1.55, "Learning Machines",
-            fontsize=32, fontweight='bold', color=FOREST,
-            verticalalignment='center', fontfamily=font_family)
+    # Brand mark: a red circle to the left of the wordmark (mirrors the navbar)
+    ax.scatter([0.55], [1.52], s=470, color=RED, zorder=3, edgecolors='none')
 
-    # Book Subtitle: Adjusted position
-    ax.text(text_x, 1.15, "A Statistical Introduction",
+    # Wordmark
+    ax.text(left, 1.5, "Learning Machines",
+            fontsize=32, fontweight='bold', color=FS_BLUE,
+            verticalalignment='center', fontfamily=FONT)
+
+    # Book subtitle
+    ax.text(left, 1.08, "A Statistical Introduction",
             fontsize=18, color=GRAY, style='italic',
-            verticalalignment='center', fontfamily=font_family)
+            verticalalignment='center', fontfamily=FONT)
 
-    # 2. Separator Line
-    # -----------------------------------------------------------
-    # Moved down slightly
-    ax.plot([text_x, 9.5], [0.9, 0.9], color=SEAFOAM, linewidth=1, zorder=1)
+    # Separator
+    ax.plot([left, 9.5], [0.82, 0.82], color=RULE, linewidth=1, zorder=1)
 
-    # 3. Notebook Topic
-    # -----------------------------------------------------------
-    # Notebook Topic: fontsize 16 is now visually subordinate to the main title
-    ax.text(text_x, 0.6, f"► {subtitle}",
-            fontsize=16, color=GREEN,
-            verticalalignment='center', fontfamily=font_family)
+    # Notebook topic: a small red dot + blue label (replaces the old green ►)
+    ax.scatter([left + 0.07], [0.5], s=70, color=RED, zorder=3, edgecolors='none')
+    ax.text(left + 0.30, 0.5, subtitle,
+            fontsize=16, color=FS_BLUE,
+            verticalalignment='center', fontfamily=FONT)
 
-    # =========================================================================
-    # Metadata (Bottom Right)
-    # =========================================================================
+    # Metadata (bottom right)
     meta_text = f"{author}"
     if github_url:
-        # Clean URL for display
         display_url = github_url.replace("https://", "").replace("http://", "")
         meta_text += f" · {display_url}"
-
-    # Metadata: Adjusted position and slightly smaller font (11)
-    ax.text(9.8, 0.2, meta_text,
+    ax.text(9.7, 0.18, meta_text,
             fontsize=11, color=GRAY,
             verticalalignment='center', horizontalalignment='right',
-            fontfamily=font_family)
+            fontfamily=FONT)
 
     plt.tight_layout(pad=0)
     return fig
@@ -90,7 +78,6 @@ def create_banner(
 def banner_to_base64(fig, format='png', dpi=150):
     """Convert matplotlib figure to base64 string for embedding."""
     buffer = BytesIO()
-    # Ensure saved image has white background and no padding
     fig.savefig(buffer, format=format, dpi=dpi, bbox_inches='tight',
                 pad_inches=0, facecolor=WHITE, edgecolor='none')
     buffer.seek(0)
@@ -100,14 +87,9 @@ def banner_to_base64(fig, format='png', dpi=150):
 
 
 def generate_markdown_header(subtitle):
-    """
-    Generate complete markdown cell content with embedded banner.
-    Defaults to hardcoded author/url for easy notebook usage.
-    """
+    """Generate the markdown cell content with the embedded banner."""
     fig = create_banner(subtitle=subtitle)
     b64 = banner_to_base64(fig)
-
-    # Markdown with margin for spacing
     markdown = f'''<div style="margin-bottom: 32px;">
 <img src="data:image/png;base64,{b64}"
      alt="Learning Machines: {subtitle}"
@@ -118,25 +100,13 @@ def generate_markdown_header(subtitle):
 
 
 if __name__ == "__main__":
-    # Test output
-    output_dir = Path("banner_output_final")
+    output_dir = Path("banner_output")
     output_dir.mkdir(exist_ok=True)
-
-    topics = [
-        "Polynomial Regression",
-        "Gradient Descent",
-        "Bayesian Inference"
-    ]
-
-    print("Generating final sample banners...")
-    for topic in topics:
+    for topic in ["Polynomial Regression", "Gradient Descent", "Capstone: Build a GPT"]:
         fig = create_banner(subtitle=topic)
-        filename = topic.lower().replace(" ", "_") + "_banner.png"
-        filepath = output_dir / filename
-
+        filepath = output_dir / (topic.lower().replace(" ", "_").replace(":", "") + "_banner.png")
         fig.savefig(filepath, dpi=150, bbox_inches='tight', pad_inches=0,
                     facecolor=WHITE, edgecolor='none')
         plt.close(fig)
         print(f"- Created: {filepath}")
-
-    print(f"\nDone. Samples saved to ./{output_dir.name}/")
+    print(f"\nDone. Samples in ./{output_dir.name}/")
