@@ -2,6 +2,8 @@
 
 Jupyter notebooks accompanying the textbook *Learning Machines: A Statistical Introduction*, by [Gregory Wheeler](https://gregorywheeler.org/).
 
+The textbook cross-references each notebook by filename in a footnote at the opening of the corresponding chapter.
+
 ## Notebooks by Chapter
 
 | Notebook | Chapter | Description |
@@ -9,6 +11,7 @@ Jupyter notebooks accompanying the textbook *Learning Machines: A Statistical In
 | `ch02_01_polynomial_regression.ipynb` | 2 | Polynomial regression and the bias-variance tradeoff |
 | `ch02_02_linear_regression_ols.ipynb` | 2 | OLS closed-form solution and matrix formulation |
 | `ch02_03_bayesian_regression.ipynb` | 2 | Bayesian linear regression with PyMC *(optional)* |
+| `ch02_04_applied.ipynb` | 2 | Applied: OLS on California housing and auto-mpg datasets |
 | `ch03_01_gradient_descent.ipynb` | 3 | Gradient descent visualization and variants |
 | `ch04_01_logistic_regression.ipynb` | 4 | Logistic regression from scratch |
 | `ch04_02_multiclass.ipynb` | 4 | Multi-class classification with softmax |
@@ -17,9 +20,11 @@ Jupyter notebooks accompanying the textbook *Learning Machines: A Statistical In
 | `ch07_01_regularization.ipynb` | 7 | Ridge, LASSO, and Elastic Net regularization |
 | `ch08_01_trees_ensembles.ipynb` | 8 | Decision trees, random forests, gradient boosting |
 | `ch08_02_kernel_methods.ipynb` | 8 | Kernel trick and support vector machines |
+| `ch08_03_applied.ipynb` | 8 | Applied: breast-cancer ensembles and decision boundaries across model classes |
 | `ch09_01_backpropagation.ipynb` | 9 | Backpropagation algorithm visualization |
 | `ch10_01_convnets.ipynb` | 10 | Convolutional neural networks with PyTorch |
 | `ch11_01_attention_transformers.ipynb` | 11 | Attention mechanisms and transformers |
+| `ch13_01_unsupervised.ipynb` | 13 | Unsupervised Fashion-MNIST: PCA, K-means, and an autoencoder with the labels sealed |
 
 ## Dependencies
 
