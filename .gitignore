@@ -4,3 +4,9 @@ __pycache__/
 data/MNIST/
 .DS_Store
 .jupyter/
+
+# Data fetched at run time by ch12_01_build_a_gpt.ipynb
+input.txt
+
+# Stray figure exports (figures belong in figures/)
+/momentum_comparison.pdf

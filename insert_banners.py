@@ -9,6 +9,7 @@ import create_banner
 
 # Notebook -> Banner subtitle mapping
 NOTEBOOKS = {
+    "ch01_01_baseline.ipynb": "The Baseline",
     "ch02_01_polynomial_regression.ipynb": "Polynomial Regression",
     "ch02_02_linear_regression_ols.ipynb": "Linear Regression: OLS",
     "ch02_04_applied.ipynb": "Applied: Regression on Real Data",
