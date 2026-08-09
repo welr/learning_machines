@@ -7,8 +7,8 @@ Statistical Introduction*, by [Gregory Wheeler](https://gregorywheeler.org/).
 >
 > **[welr.github.io/learning-machines-site](https://welr.github.io/learning-machines-site/)**
 >
-> That is where the book's code is published. Nineteen of the twenty-five pages run
-> in your browser, in Python and R side by side, with nothing to install. The six
+> That is where the book's code is published. Nineteen of the twenty-six pages run
+> in your browser, in Python and R side by side, with nothing to install. The seven
 > that train neural networks need PyTorch and open in Google Colab instead.
 >
 > **You do not need this repository to use the book.** It holds the notebook sources
@@ -31,7 +31,7 @@ is the source it was built from and, for the PyTorch chapters, the thing Colab r
 | **1** | [The Baseline](https://welr.github.io/learning-machines-site/chapters/ch01_01_baseline.html) | browser | `ch01_01_baseline.ipynb` |
 | **2** | [Polynomial Regression](https://welr.github.io/learning-machines-site/chapters/ch02_01_polynomial_regression.html) | browser | `ch02_01_polynomial_regression.ipynb` |
 | **2** | [Ordinary Least Squares](https://welr.github.io/learning-machines-site/chapters/ch02_02_linear_regression_ols.html) | browser | `ch02_02_linear_regression_ols.ipynb` |
-| **2** | [Bayesian Linear Regression](https://welr.github.io/learning-machines-site/chapters/ch02_03_bayesian_regression.html) | browser | `ch02_03_bayesian_regression.ipynb` |
+| **2** | [Bayesian Regression](https://welr.github.io/learning-machines-site/chapters/ch02_03_bayesian_regression.html) | browser | `ch02_03_bayesian_regression.ipynb` |
 | **2** | [Applied — Regression in Practice](https://welr.github.io/learning-machines-site/chapters/ch02_04_applied.html) | browser | `ch02_04_applied.ipynb` |
 | **3** | [Gradient Descent](https://welr.github.io/learning-machines-site/chapters/ch03_01_gradient_descent.html) | browser | `ch03_01_gradient_descent.ipynb` |
 | **4** | [Logistic Regression](https://welr.github.io/learning-machines-site/chapters/ch04_01_logistic_regression.html) | browser | `ch04_01_logistic_regression.ipynb` |
@@ -47,12 +47,13 @@ is the source it was built from and, for the PyTorch chapters, the thing Colab r
 | **8** | [Applied — Trees, Ensembles, and Decision Boundaries](https://welr.github.io/learning-machines-site/chapters/ch08_03_applied.html) | browser | `ch08_03_applied.ipynb` |
 | **9** | [Backpropagation](https://welr.github.io/learning-machines-site/chapters/ch09_01_backpropagation.html) | browser | `ch09_01_backpropagation.ipynb` |
 | **9** | [Applied — A Neural Network in PyTorch](https://welr.github.io/learning-machines-site/chapters/ch09_02_applied.html) | Colab | `ch09_02_applied.ipynb` |
-| **10** | [Convolutional Neural Networks](https://welr.github.io/learning-machines-site/chapters/ch10_01_convnets.html) | Colab | `ch10_01_convnets.ipynb` |
+| **10** | [Convolutional Networks](https://welr.github.io/learning-machines-site/chapters/ch10_01_convnets.html) | Colab | `ch10_01_convnets.ipynb` |
 | **10** | [Applied: A Convolutional Network](https://welr.github.io/learning-machines-site/chapters/ch10_02_applied.html) | Colab | `ch10_02_applied.ipynb` |
 | **11** | [Attention and Transformers](https://welr.github.io/learning-machines-site/chapters/ch11_01_attention_transformers.html) | Colab | `ch11_01_attention_transformers.ipynb` |
 | **11** | [Applied — Attention from Scratch](https://welr.github.io/learning-machines-site/chapters/ch11_02_applied.html) | Colab | `ch11_02_applied.ipynb` |
 | **12** | [Capstone — Build a GPT](https://welr.github.io/learning-machines-site/chapters/ch12_01_build_a_gpt.html) | Colab | `ch12_01_build_a_gpt.ipynb` |
-| **13** | [Structure Without Labels](https://welr.github.io/learning-machines-site/chapters/ch13_01_unsupervised.html) | browser | `ch13_01_unsupervised.ipynb` |
+| **13** | [Structure Without Labels](https://welr.github.io/learning-machines-site/chapters/ch13_01_unsupervised.html) | browser | — |
+| **13** | [Applied — Unsupervised Fashion-MNIST](https://welr.github.io/learning-machines-site/chapters/ch13_02_applied.html) | Colab | `ch13_01_unsupervised.ipynb` |
 
 ## Working on the notebooks
 
