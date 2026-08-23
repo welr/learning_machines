@@ -54,6 +54,7 @@ is the source it was built from and, for the PyTorch chapters, the thing Colab r
 | **12** | [Capstone — Build a GPT](https://welr.github.io/learning-machines-site/chapters/ch12_01_build_a_gpt.html) | Colab | `ch12_01_build_a_gpt.ipynb` |
 | **13** | [Structure Without Labels](https://welr.github.io/learning-machines-site/chapters/ch13_01_unsupervised.html) | browser | — |
 | **13** | [Applied — Unsupervised Fashion-MNIST](https://welr.github.io/learning-machines-site/chapters/ch13_02_applied.html) | Colab | `ch13_01_unsupervised.ipynb` |
+| **13** | [Latent Semantic Analysis](https://welr.github.io/learning-machines-site/chapters/ch13_03_lsa.html) | browser | `ch13_03_lsa.ipynb` |
 
 ## Working on the notebooks
 
