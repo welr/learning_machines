@@ -7,9 +7,10 @@ Statistical Introduction*, by [Gregory Wheeler](https://gregorywheeler.org/).
 >
 > **[welr.github.io/learning-machines-site](https://welr.github.io/learning-machines-site/)**
 >
-> That is where the book's code is published. Nineteen of the twenty-six pages run
-> in your browser, in Python and R side by side, with nothing to install. The seven
-> that train neural networks need PyTorch and open in Google Colab instead.
+> That is where the book's code is published. Twenty-three of the twenty-seven pages run
+> in your browser, in Python and R side by side, with nothing to install. The four
+> that only train neural networks need PyTorch and open in Google Colab instead;
+> seven more pages carry a Colab link beside their live cells.
 >
 > **You do not need this repository to use the book.** It holds the notebook sources
 > the site is built from.
@@ -17,7 +18,7 @@ Statistical Introduction*, by [Gregory Wheeler](https://gregorywheeler.org/).
 ## If you arrived here from an "Open in Colab" button
 
 You are in the right place — Colab opens these files directly, and everything needed
-comes down at run time. Nothing to clone, nothing to install. Eight notebooks are
+comes down at run time. Nothing to clone, nothing to install. Eleven notebooks are
 reachable that way: the PyTorch chapters, the optional Bayesian notebook, and the
 unsupervised coda.
 
@@ -41,20 +42,20 @@ is the source it was built from and, for the PyTorch chapters, the thing Colab r
 | **6** | [Model Evaluation](https://welr.github.io/learning-machines-site/chapters/ch06_01_model_evaluation.html) | browser | `ch06_01_model_evaluation.ipynb` |
 | **6** | [Applied — Evaluating a Classifier](https://welr.github.io/learning-machines-site/chapters/ch06_02_applied.html) | browser | `ch06_02_applied.ipynb` |
 | **7** | [Ridge and LASSO](https://welr.github.io/learning-machines-site/chapters/ch07_01_regularization.html) | browser | `ch07_01_regularization.ipynb` |
-| **7** | [Ridge, LASSO, and the Regularization Path](https://welr.github.io/learning-machines-site/chapters/ch07_02_applied.html) | browser | `ch07_02_applied.ipynb` |
+| **7** | [Applied — Ridge, LASSO, and the Regularization Path](https://welr.github.io/learning-machines-site/chapters/ch07_02_applied.html) | browser | `ch07_02_applied.ipynb` |
 | **8** | [Decision Trees and Ensembles](https://welr.github.io/learning-machines-site/chapters/ch08_01_trees_ensembles.html) | browser | `ch08_01_trees_ensembles.ipynb` |
 | **8** | [Kernel Methods](https://welr.github.io/learning-machines-site/chapters/ch08_02_kernel_methods.html) | browser | `ch08_02_kernel_methods.ipynb` |
 | **8** | [Applied — Trees, Ensembles, and Decision Boundaries](https://welr.github.io/learning-machines-site/chapters/ch08_03_applied.html) | browser | `ch08_03_applied.ipynb` |
 | **9** | [Backpropagation](https://welr.github.io/learning-machines-site/chapters/ch09_01_backpropagation.html) | browser | `ch09_01_backpropagation.ipynb` |
 | **9** | [Applied — A Neural Network in PyTorch](https://welr.github.io/learning-machines-site/chapters/ch09_02_applied.html) | Colab | `ch09_02_applied.ipynb` |
-| **10** | [Convolutional Networks](https://welr.github.io/learning-machines-site/chapters/ch10_01_convnets.html) | Colab | `ch10_01_convnets.ipynb` |
-| **10** | [Applied: A Convolutional Network](https://welr.github.io/learning-machines-site/chapters/ch10_02_applied.html) | Colab | `ch10_02_applied.ipynb` |
-| **11** | [Attention and Transformers](https://welr.github.io/learning-machines-site/chapters/ch11_01_attention_transformers.html) | Colab | `ch11_01_attention_transformers.ipynb` |
+| **10** | [Convolutional Networks](https://welr.github.io/learning-machines-site/chapters/ch10_01_convnets.html) | browser + Colab | `ch10_01_convnets.ipynb` |
+| **10** | [Applied — A Convolutional Network](https://welr.github.io/learning-machines-site/chapters/ch10_02_applied.html) | Colab | `ch10_02_applied.ipynb` |
+| **11** | [Attention and Transformers](https://welr.github.io/learning-machines-site/chapters/ch11_01_attention_transformers.html) | browser + Colab | `ch11_01_attention_transformers.ipynb` |
 | **11** | [Applied — Attention from Scratch](https://welr.github.io/learning-machines-site/chapters/ch11_02_applied.html) | Colab | `ch11_02_applied.ipynb` |
-| **12** | [Capstone — Build a GPT](https://welr.github.io/learning-machines-site/chapters/ch12_01_build_a_gpt.html) | Colab | `ch12_01_build_a_gpt.ipynb` |
+| **12** | [Capstone — Build a GPT](https://welr.github.io/learning-machines-site/chapters/ch12_01_build_a_gpt.html) | browser + Colab | `ch12_01_build_a_gpt.ipynb` |
 | **13** | [Structure Without Labels](https://welr.github.io/learning-machines-site/chapters/ch13_01_unsupervised.html) | browser | — |
 | **13** | [Applied — Unsupervised Fashion-MNIST](https://welr.github.io/learning-machines-site/chapters/ch13_02_applied.html) | Colab | `ch13_01_unsupervised.ipynb` |
-| **13** | [Latent Semantic Analysis](https://welr.github.io/learning-machines-site/chapters/ch13_03_lsa.html) | browser | `ch13_03_lsa.ipynb` |
+| **13** | [Latent Semantic Analysis](https://welr.github.io/learning-machines-site/chapters/ch13_03_lsa.html) | browser + Colab | `ch13_03_lsa.ipynb` |
 
 ## Working on the notebooks
 
