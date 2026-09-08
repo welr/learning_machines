@@ -108,6 +108,8 @@ def set_notebook_mode():
     COLORS_2 = NOTEBOOK_COLORS_2
     COLORS_3 = NOTEBOOK_COLORS_3
     plt.rcParams['axes.prop_cycle'] = plt.cycler('color', NOTEBOOK_COLORS)
+    plt.rcParams['pdf.fonttype'] = 42
+    plt.rcParams['ps.fonttype'] = 42
 
 
 def set_book_mode():
@@ -126,6 +128,12 @@ def set_book_mode():
     COLORS_2 = BOOK_COLORS_2
     COLORS_3 = BOOK_COLORS_3
     plt.rcParams['axes.prop_cycle'] = plt.cycler('color', BOOK_COLORS)
+    # Book figures must embed text as TrueType (Type 42), not Type 3: presses
+    # reject Type 3 fonts and their glyphs are not searchable in the PDF. The
+    # figure generators call this function without loading the .mplstyle, so
+    # the setting lives here as well as there.
+    plt.rcParams['pdf.fonttype'] = 42
+    plt.rcParams['ps.fonttype'] = 42
 
 
 # =============================================================================

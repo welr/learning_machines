@@ -102,6 +102,10 @@ font.family: sans-serif
 font.sans-serif: Roboto, DejaVu Sans, Helvetica, Arial, sans-serif
 font.size: 12
 text.color: 333333
+# Embed text as TrueType (Type 42), not Type 3: presses reject Type 3 fonts,
+# and Type 3 glyphs are not searchable in the compiled book.
+pdf.fonttype: 42
+ps.fonttype: 42
 
 # =============================================================================
 # PATCHES (for bar charts, etc.)
