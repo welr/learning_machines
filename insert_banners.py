@@ -33,7 +33,7 @@ NOTEBOOKS = {
     "ch12_01_build_a_gpt.ipynb": "Capstone: Build a GPT",
     "ch02_03_bayesian_regression.ipynb": "Bayesian Linear Regression",
     "ch08_02_kernel_methods.ipynb": "Kernel Methods",
-    "ch13_01_unsupervised.ipynb": "Structure Without Labels",
+    "ch13_02_applied.ipynb": "Applied: Unsupervised Fashion-MNIST",
     "ch13_03_lsa.ipynb": "Latent Semantic Analysis",
 }
 
