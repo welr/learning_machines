@@ -21,11 +21,11 @@ Thank you for your interest in improving these notebooks.
 - New features or additional content
 - Style or formatting preferences
 
-The notebooks are designed to accompany a specific textbook and course. While we appreciate suggestions, major changes to content or structure are unlikely to be merged.
+The notebooks are designed to accompany a specific textbook. While we appreciate suggestions, major changes to content or structure are unlikely to be merged.
 
 ## Content Questions
 
-For questions about the material itself, please use the course discussion forum rather than GitHub Issues.
+Questions about the material itself are best answered by the textbook; please use GitHub Issues only to report errors in the notebooks.
 
 ## Submitting a Fix
 
