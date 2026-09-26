@@ -13,7 +13,7 @@ from io import BytesIO
 # =============================================================================
 # Brand colors (aligned to the companion site / theme.scss)
 # =============================================================================
-FS_BLUE = '#31417A'     # Frankfurt School blue — wordmark + topic
+FS_BLUE = '#31417A'     # deep blue — wordmark + topic
 RED     = '#E3120B'     # sharp accent — the brand circle (matches the navbar mark)
 GRAY    = '#666666'     # secondary text (subtitle, metadata)
 RULE    = '#D9D9D9'     # subtle separator
